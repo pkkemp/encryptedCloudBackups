@@ -29,7 +29,7 @@ func main() {
 	dirToTraverse := "./files"
 
 	// Initialize the SQLite database
-	db, err := sql.Open("sqlite3", "./files.db")
+	db, err := sql.Open("sqlite3", "./db/files.db")
 	if err != nil {
 		log.Fatal(err)
 	}
